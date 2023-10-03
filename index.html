@@ -1,0 +1,384 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Freitas | Portfólio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/mediaqueries.css">
+    </head>
+    <body>
+        <header>
+            <nav id="desktop-nav">
+                <div class="logo">Gabriel Freitas</div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#experience">Habilidades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="darkThemeDiv" id="darkThemeId">
+                    <input type="checkbox" class="checkboxDarkTheme" id="chk" />
+                    <label for="chk" class="darkThemeLabel">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Gabriel Freitas</div>
+                <div class="darkThemeDiv" id="darkThemeId">
+                    <input type="checkbox" class="checkboxDarkTheme" id="chk" />
+                    <label for="chk" class="darkThemeLabel">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img 
+                    src="assets/perfil.png" 
+                    alt="Gabriel Freitas - Foto de Perfil"
+                />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Olá, meu nome é</p>
+                <h1 class="title">Gabriel Freitas</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button
+                     class="btn btn-color-2"
+                     onclick="window.open('./assets/curriculo.pdf')"
+                     >
+                     Download Currículo
+                    </button>
+                    
+                    <button
+                     class="btn btn-color-1"
+                     onclick="location.href='./#contact'"
+                     >
+                     Contate-me
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                        src="assets/linkedin.png" 
+                        alt="Meu Linkedin" 
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/gabriel-freitas-7a3336265/'"
+                    />
+                    <img
+                        src="assets/github.png" 
+                        alt="Meu git" 
+                        class="icon"
+                        onclick="location.href='https://github.com/GabrielFreitas29'"
+                    />
+                </div>
+            </div>
+            <img
+                id="profileArrow"
+                src="assets/arrow.png" 
+                alt="Ícone Flecha" 
+                class="icon arrow"
+                onclick="location.href='/#about'"
+            />
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Saiba Mais</p>
+            <h1 class="title">Sobre Mim</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img
+                        src="./assets/perfil2.png" 
+                        alt="Foto de Perfil" 
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img
+                                src="assets/experience.png" 
+                                alt="Ícone de Habilidades"
+                                class="icon"
+                            />
+                            <h3>Experiências</h3>
+                            <p>1.5+ Anos <br />Web Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="assets/education.png" 
+                                alt="Ícone de educação"
+                                class="icon"
+                            />
+                            <h3>Formação</h3>
+                            <p>Senac Santo Amaro <br />Sistemas para Internet</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>👨‍💻 Desenvolvendo interfaces e APIs com JavaScript</p>
+                        <p>🎓 Cursando Sistemas para Internet</p>
+                        <p>💡 Interesse em desenvolvimento front end e back end</p>
+                        <p>🚀 Buscando uma oportunidade para atuar como desenvolvedor</p>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="assets/arrow.png" 
+                alt="Ícone Flecha" 
+                class="icon arrow"
+                onclick="location.href='/#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Veja minhas</p>
+            <h1 class="title">Tecnologias e Habilidades</h1>
+            <div class="experience-details-cantainer">
+                <div class="about-containers">
+
+                    <!-- Frontend -->
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediário</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediário</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                           
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Angular</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Back-end -->
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediário</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Laravel</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>SQL Server</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="assets/checkmark.png" 
+                                    alt="Ícone de Habilidades"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>PHP</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="assets/arrow.png" 
+                alt="Ícone Flecha" 
+                class="icon arrow"
+                onclick="location.href='/#projects'"
+            />
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Veja Meus</p>
+            <h1 class="title">Projetos</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="assets/comingsoon.png" 
+                                alt="Projeto 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Projeto Um</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Repositório
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Abrir Projeto
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="assets/comingsoon.png" 
+                                alt="Projeto 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Repositório
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Abrir Projeto
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="assets/comingsoon.png" 
+                                alt="Projeto 3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Projeto Três</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Repositório
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.
+                            href='https://github.com'">
+                                Abrir Projeto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="assets/arrow.png" 
+                alt="Ícone Flecha" 
+                class="icon arrow"
+                onclick="location.href='/#contact'"
+            />
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Entrar em Contato</p>
+            <h1 class="title">Fale Comigo</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img
+                        src="assets/email.png" 
+                        alt="Ícone Email"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p><a class="differentColor" href="mailto:gabriellfreitass2910@gmail.com">gabriellfreitass2910@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="assets/linkedin.png" 
+                        alt="Ícone Linkedin"
+                        class="icon contact-icon"
+                    />
+                    <p><a class="differentColor" href="https://www.linkedin.com/in/gabriel-freitas-7a3336265/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#experience">Habilidades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright&#169; 2023 Gabriel Freitas. All Rights Reserved</p>
+        </footer>
+        <script src="https://kit.fontawesome.com/0439b3d73a.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>]
+    </body>
+ </html>
